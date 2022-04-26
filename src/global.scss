@@ -9,18 +9,161 @@
  * https://ionicframework.com/docs/layout/global-stylesheets
  */
 
+
 /* Core CSS required for Ionic components to work properly */
+
 @import "~@ionic/angular/css/core.css";
 
 /* Basic CSS for apps built with Ionic */
+
 @import "~@ionic/angular/css/normalize.css";
 @import "~@ionic/angular/css/structure.css";
 @import "~@ionic/angular/css/typography.css";
 @import '~@ionic/angular/css/display.css';
 
 /* Optional CSS utils that can be commented out */
+
 @import "~@ionic/angular/css/padding.css";
 @import "~@ionic/angular/css/float-elements.css";
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+/* +++++++++CSS GLOBALES++++++++*/
+
+@import "theme/mapa.scss";
+@import "theme/color.scss";
+
+/* Estilos globales */
+
+.body {
+    position: absolute;
+}
+
+.item-style {
+    --inner-padding-end: 0px;
+    --padding-start: 0px;
+    /* ion-select {
+        margin-left: -8px;
+    }*/
+    ion-label {
+        white-space: pre-line !important;
+        margin: 0px;
+    }
+}
+
+.footer-boton {
+    position: absolute;
+    bottom: 0;
+}
+
+.toolbar-footer {
+    --background: rgba(255, 255, 255, 0.5);
+}
+
+.background-gris {
+    background: #f5f5f5;
+}
+
+ul {
+    // font-family: "Futura";
+    margin: 0px;
+    padding-left: 20px;
+}
+
+.sin-marker-li {
+    li {
+        list-style: none !important;
+        font-size: 14px;
+    }
+}
+
+.button-style {
+    margin: 1%;
+    height: 50px;
+    border-radius: 1em;
+    // --background: linear-gradient(to right, rgba(250, 103, 103, 1) 0%, rgba(249, 25, 84, 1) 65%, rgba(249, 25, 84, 1) 100%);
+    // --background: transparent;
+    h3 {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        text-transform: initial;
+        font-size: 0.9em;
+    }
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+
+/* ++++++  MODAL  ++++++*/
+
+.no-scroll {
+    --overflow: hidden;
+}
+
+.custom-modal-ver-mas {
+    .modal-wrapper {
+        min-height: 350px;
+        height: auto;
+        position: absolute;
+        bottom: 0;
+    }
+    --height: auto !important;
+    --backdrop-opacity: 0.3;
+    --width: 100%;
+    --border-radius: 0.5em 0.5em 0em 0em;
+}
+
+.custom-modal-contactar {
+    .modal-wrapper {
+        min-height: 250px;
+        height: auto;
+        position: absolute;
+        bottom: 0;
+    }
+    //--height: auto !important;
+    --backdrop-opacity: 0.3;
+    --width: 100%;
+    --border-radius: 0.5em 0.5em 0em 0em;
+}
+
+.custom-modal-promocion {
+    .modal-wrapper {
+        min-height: 500px;
+        height: auto;
+        position: absolute;
+        bottom: 0;
+    }
+    //--height: auto !important;
+    --backdrop-opacity: 0.3;
+    --width: 100%;
+    --border-radius: 0.5em 0.5em 0em 0em;
+}
+
+
+/** popover */
+
+.popover-class {
+    --width: 300px;
+    --backdrop-opacity: 0.2;
+    .popover-content {
+        position: absolute;
+        bottom: 0 !important;
+        left: 0 !important;
+        margin: 0px !important;
+        top: unset !important;
+        width: 100%;
+    }
+    .popover-arrow {
+        visibility: hidden;
+    }
+}
+
+.popover-class-municipio {
+    --width: 200px;
+    .popover-content {
+        width: 300px !important;
+    }
+}

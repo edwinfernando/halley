@@ -4,32 +4,55 @@ import { TabsPage } from './tabs.page';
 
 const routes: Routes = [
   {
-    path: 'tabs',
-    component: TabsPage,
-    children: [
-      {
-        path: 'tab1',
-        loadChildren: () => import('../tab1/tab1.module').then(m => m.Tab1PageModule)
-      },
-      {
-        path: 'tab2',
-        loadChildren: () => import('../tab2/tab2.module').then(m => m.Tab2PageModule)
-      },
-      {
-        path: 'tab3',
-        loadChildren: () => import('../tab3/tab3.module').then(m => m.Tab3PageModule)
-      },
-      {
-        path: '',
-        redirectTo: '/tabs/tab1',
-        pathMatch: 'full'
-      }
-    ]
+    path: '',
+    redirectTo: '/tab-inicio',
+    pathMatch: 'full'
   },
   {
     path: '',
-    redirectTo: '/tabs/tab1',
-    pathMatch: 'full'
+    component: TabsPage,
+    children: [
+      {
+        path: 'tab-inicio',
+        loadChildren: () => import('../tab-inicio/tab-inicio.module').then(m => m.TabInicioPageModule)
+      },
+      {
+        path: 'tab-inicio/ver-ubicacion',
+        loadChildren: () => import('../pages/ver-ubicacion/ver-ubicacion.module').then( m => m.VerUbicacionPageModule)
+      },
+      {
+        path: 'tab-inicio/eventos',
+        loadChildren: () => import('../pages/eventos/eventos.module').then( m => m.EventosPageModule)
+      },
+      {
+        path: 'tab-inicio/eventos-detalle',
+        loadChildren: () => import('../pages/eventos-detalle/eventos-detalle.module').then( m => m.EventosDetallePageModule)
+      },
+      {
+        path: 'tab-inicio/info-municipios',
+        loadChildren: () => import('../pages/info-municipios/info-municipios.module').then( m => m.InfoMunicipiosPageModule)
+      },
+      {
+        path: 'tab-inicio/ver-mapa',
+        loadChildren: () => import('../pages/ver-mapa/ver-mapa.module').then( m => m.VerMapaPageModule)
+      },
+      {
+        path: 'tab-buscar',
+        loadChildren: () => import('../tab-buscar/tab-buscar.module').then(m => m.TabBuscarPageModule)
+      },
+      {
+        path: 'tab-promociones',
+        loadChildren: () => import('../tab-promociones/tab-promociones.module').then( m => m.TabPromocionesPageModule)
+      },
+      {
+        path: 'tab-favoritos',
+        loadChildren: () => import('../tab-favoritos/tab-favoritos.module').then(m => m.TabFavoritosPageModule)
+      },
+      {
+        path: 'tab-contactenos',
+        loadChildren: () => import('../tab-contactenos/tab-contactenos.module').then( m => m.TabContactenosPageModule)
+      }
+    ]
   }
 ];
 

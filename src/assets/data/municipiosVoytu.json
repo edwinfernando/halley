@@ -1,0 +1,48 @@
+[{
+        "id": "1",
+        "nombre": "Norte del Cauca",
+        "municipios": [{
+                "codigo": "191030",
+                "isChecked": true,
+                "location": {
+                    "lat": 3.002516,
+                    "lng": -76.483799
+                },
+                "departamento": "Cauca",
+                "municipio": "Santander de Quilichao",
+                "placeId": "ChIJXd9wwM9_MI4RmC_X-VNhoH0",
+                "direccion": "25, Santander de Quilichao, Cauca, Colombia"
+            },
+            {
+                "codigo": "191031",
+                "isChecked": false,
+                "location": {
+                    "lat": 3.033296,
+                    "lng": -76.411895
+                },
+                "departamento": "Cauca",
+                "municipio": "Caloto",
+                "placeId": "ChIJXd9wwM9_MI4RmC_X-VNhoH0",
+                "direccion": "25, Caloto, Cauca, Colombia"
+            }
+        ],
+        "expanded": ""
+    },
+    {
+        "id": "2",
+        "nombre": "Florida",
+        "municipios": [{
+            "codigo": "32501 a 32509",
+            "isChecked": true,
+            "location": {
+                "lat": 28.4814032,
+                "lng": -81.4827496
+            },
+            "departamento": "Florida",
+            "municipio": "Orlando",
+            "placeId": "ChIJXd9wwM9_MI4RmC_X-VNhoH0",
+            "direccion": "25, Santander de Quilichao, Cauca, Colombia"
+        }],
+        "expanded": ""
+    }
+]

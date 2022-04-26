@@ -1,0 +1,50 @@
+.card-item {
+    font-family: "Futura";
+    width: 100%;
+    margin: 0px;
+    // background: rgba(250, 204, 204, 0.1);
+    ion-card-header {
+        position: absolute;
+        bottom: 0;
+        padding-top: 5px;
+        padding-bottom: 7px;
+        width: 100%;
+    }
+    ion-card-title {
+        font-size: 1.3em;
+        color: #FFFFFF;
+    }
+    ion-card-subtitle {
+        font-size: 1.1em;
+        color: #FFFFFF;
+        margin-top: 0px;
+    }
+}
+
+.image-card {
+    height: 110px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.div-rifa {
+    position: absolute;
+    right: 0;
+    width: 20px;
+    height: 100%;
+    background: var(--ion-color-primary);
+    //  border-right: 50px solid rgba(0, 0, 0, 0.4);
+    //  border-top: 140px solid rgba(0, 0, 0, 0.4);
+    //  border-left: 90px solid transparent;
+    ion-label {
+        position: absolute;
+        width: 10px;
+        top: 12px;
+        right: 6px;
+        text-align: center;
+        font-size: initial;
+        color: #ffffff;
+    }
+}

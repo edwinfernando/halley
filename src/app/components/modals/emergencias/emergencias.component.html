@@ -1,0 +1,22 @@
+<ion-content class="no-scroll padding">
+    <ion-buttons class="boton-close">
+        <ion-button (click)="closeModal()">
+            <ion-icon name="close-circle-outline"></ion-icon>
+        </ion-button>
+    </ion-buttons>
+    <ion-card-header>
+        <ion-card-title mode="md">Emergencia</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+        <ion-row>
+            <ion-col *ngFor="let numeros of numerosEmergencia" class="sin-padding" size="12">
+                <ion-button (click)="onClickLlamar(numeros.numero)" [color]="numeros.color" expand="block" fill="outline" shape="round">
+                    <ion-icon slot="start" class="icon-redondos" name="call-outline"></ion-icon>
+                    <p>
+                        {{numeros.nombre}}
+                    </p>
+                </ion-button>
+            </ion-col>
+        </ion-row>
+    </ion-card-content>
+</ion-content>

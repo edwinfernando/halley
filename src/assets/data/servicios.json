@@ -1,0 +1,145 @@
+[{
+        "id": "1",
+        "imagenes": [{
+            "tipo": "imagen",
+            "url": "https://4.bp.blogspot.com/_uCdKSF-82fk/TUFz43rFgcI/AAAAAAAAATw/vsmbHBS4ECE/s1600/Imagen7.jpg"
+        }],
+        "nombre": "Puente de guadua",
+        "descripcion": "El puente de guada es un hermoso lugar visitado por la comunidad quilichagueña, se encuentra ubicado sobre el rio quilichao exactamente en la vereda San Pedro. En este lugar se suele realizar diversas actividades entre ellas el famoso paseo de hoya.",
+        "categoria": "2",
+        "ubicacion": {
+            "codigo": "191030",
+            "placeId": "ChIJXd9wwM9_MI4RmC_X-VNhoH0",
+            "location": {
+                "lat": 2.981498693095459,
+                "lng": -76.45657353510384
+            },
+            "direccion": "Carrera 13",
+            "municipio": "Santander de Quilichao",
+            "departamento": "Cauca",
+            "isChecked": true
+        },
+        "km": "",
+        "min": ""
+    },
+    {
+        "id": "2",
+        "imagenes": [{
+            "tipo": "imagen",
+            "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIMgsEUN8Cv-nHZhZKZCVLLJGPxjdzSZ1vAA&usqp=CAU"
+        }],
+        "nombre": "Capilla Santa Barbara de Dominguillo",
+        "descripcion": "",
+        "categoria": "1",
+        "ubicacion": {
+            "codigo": "191030",
+            "placeId": "ChIJXd9wwM9_MI4RmC_X-VNhoH0",
+            "location": {
+                "lat": 2.974436180886124,
+                "lng": -76.49677951823307
+            },
+            "direccion": "Carrera 13",
+            "municipio": "Santander de Quilichao",
+            "departamento": "Cauca",
+            "isChecked": true
+        },
+        "km": "",
+        "min": ""
+    },
+    {
+        "id": "3",
+        "imagenes": [{
+            "tipo": "imagen",
+            "url": "https://www.proclamadelcauca.com/wp-content/uploads/2019/09/Parque-de-Caloto-es-producto-del-esfuerzo-de-todos-1.jpg"
+        }],
+        "nombre": "Parque principal Caloto",
+        "descripcion": "",
+        "categoria": "1",
+        "ubicacion": {
+            "codigo": "191030",
+            "placeId": "ChIJXd9wwM9_MI4RmC_X-VNhoH0",
+            "location": {
+                "lat": 3.0337416,
+                "lng": -76.4097907
+            },
+            "direccion": "Carrera 13",
+            "municipio": "Caloto",
+            "departamento": "Cauca",
+            "isChecked": true
+        },
+        "km": "",
+        "min": ""
+    },
+    {
+        "id": "4",
+        "imagenes": [{
+            "tipo": "imagen",
+            "url": "https://emquilichao.gov.co/wp-content/uploads/2017/01/rio2.png"
+        }],
+        "nombre": "Puente de ladrillo",
+        "descripcion": "",
+        "categoria": "2",
+        "ubicacion": {
+            "codigo": "191030",
+            "placeId": "ChIJXd9wwM9_MI4RmC_X-VNhoH0",
+            "location": {
+                "lat": 3.0058755901026513,
+                "lng": -76.48129015430465
+            },
+            "direccion": "Carrera 13",
+            "municipio": "Santander de Quilichao",
+            "departamento": "Cauca",
+            "isChecked": true
+        },
+        "km": "",
+        "min": ""
+    },
+    {
+        "id": "5",
+        "imagenes": [{
+            "tipo": "imagen",
+            "url": "https://www.proclamadelcauca.com/wp-content/uploads/2019/04/Mi-Comía-ícono-y-patrimonio-gastronómico-desde-Santander-de-Quilichao.jpg"
+        }],
+        "nombre": "Restaurante Mi Comia",
+        "descripcion": "",
+        "categoria": "3",
+        "ubicacion": {
+            "codigo": "191030",
+            "placeId": "ChIJXd9wwM9_MI4RmC_X-VNhoH0",
+            "location": {
+                "lat": 3.0084588,
+                "lng": -76.4847413
+            },
+            "direccion": "Carrera 13",
+            "municipio": "Santander de Quilichao",
+            "departamento": "Cauca",
+            "isChecked": true
+        },
+        "km": "",
+        "min": ""
+    },
+    {
+        "id": "6",
+        "imagenes": [{
+            "tipo": "imagen",
+            "url": "https://images1.loopnet.com/i2/q_X-C_jBLJphz-JsA3bW91PDUb8L4TNzy1mYjTkGKHc/110/12399-S-Apopka-Vineland-Rd-Orlando-FL-Building-Photo-1-Large.jpg"
+        }],
+        "nombre": "S Apopka Vineland",
+        "descripcion": "",
+        "categoria": "3",
+        "ubicacion": {
+            "codigo": "12204",
+            "placeId": "",
+            "location": {
+                "lat": 28.3873642,
+                "lng": -81.5069640
+            },
+            "direccion": "9FPV+W8J Lake Buena Vista",
+            "municipio": "Orlando",
+            "departamento": "Florida",
+            "isChecked": true
+        },
+        "km": "",
+        "min": ""
+    }
+]

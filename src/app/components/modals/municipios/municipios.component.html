@@ -1,0 +1,27 @@
+<ion-content>
+    <ion-grid fixed>
+        <ion-row>
+            <ion-col size="12">
+                <ion-item class="icon-detail-size" button (click)="seleccionaMunicipio(municipioSeleccionado)" mode="md" lines="none">
+                    <ion-label class="texto-item" color="primary">
+                        <h6>{{municipioSeleccionado.municipio}}</h6>
+                    </ion-label>
+                </ion-item>
+            </ion-col>
+            <ion-col class="sin-padding" *ngFor="let zona of zonaMunicipios" size="12" size-sm="12">
+                <ion-item mode="ios" button (click)="onClickSilla(zona)" [detailIcon]="iconDetail(zona)" lines="none" detail>
+                    <ion-label class="texto" [style.color]="estiloGeneral.COLOR_TEXT_GENERAL">{{zona.nombre}}</ion-label>
+                </ion-item>
+
+                <app-expandible expandHeight="auto" [expanded]="zona.expanded">
+                    <ion-item class="icon-detail-size" *ngFor="let muni of zona.municipios" button (click)="seleccionaMunicipio(muni)" mode="md" lines="none">
+                        <ion-checkbox color="primary" mode="ios" value="{{muni.municipio}}" checked="{{muni.municipio === municipioSeleccionado.municipio}}"></ion-checkbox>
+                        <ion-label class="texto-item" color="{{muni.municipio === municipioSeleccionado.municipio? 'primary' : 'medium'}}">
+                            <h6>{{muni.municipio}}</h6>
+                        </ion-label>
+                    </ion-item>
+                </app-expandible>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>

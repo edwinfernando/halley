@@ -1,0 +1,154 @@
+<app-header-tabs [titulo]="titulo" [isBotonesCompartir]="true" [isDetalleEvento]="true"></app-header-tabs>
+
+<ion-content>
+    <app-slide-imagenes *ngIf="detalleServicio.detalleServicio !== null" [imagenes]="detalleServicio.detalleServicio.imagenes"></app-slide-imagenes>
+    <ion-row *ngIf="detalleServicio.detalleServicio !== null" class="margin-container">
+        <ion-col class="background-gris" size="12">
+            <ion-card-header>
+                <ion-card-title mode="md">{{titulo}} <small>({{detalleServicio.detalleServicio.min}} - {{detalleServicio.detalleServicio.km}})</small></ion-card-title>
+                <ion-card-subtitle mode="md">
+                    {{subtitulo}}
+                </ion-card-subtitle>
+            </ion-card-header>
+
+            <ion-card-content class="ion-text-justify">
+                <ion-label class="ion-text-wrap">
+                    {{recortarCadena(detalleServicio.detalleServicio.descripcion)}}
+                </ion-label>
+                <a *ngIf="descripcionLength(detalleServicio.detalleServicio.descripcion)" (click)="onClickModalVerMas(titulo, $event, detalleServicio.detalleServicio.descripcion)">(ver más)</a>
+            </ion-card-content>
+        </ion-col>
+        <ion-col size="12">
+            <ion-card-content>
+                <ion-row>
+                    <ion-col size="12">
+                        <ion-row>
+                            <ion-col *ngIf="detalleServicio.contactar.length > 0" size="6">
+                                <ion-button class="button-style " size="large" expand="block" mode="ios" (click)="onClickLlamar($event)">
+                                    <ion-text>
+                                        <h3>Contactar</h3>
+                                    </ion-text>
+                                </ion-button>
+                            </ion-col>
+                            <ion-col [size]="detalleServicio.contactar.length > 0? 6 : 12">
+                                <ion-button class="button-style" size="large" expand="block" mode="ios" (click)="onClickVerMapa()">
+                                    <ion-text>
+                                        <h3>Ver en mapa</h3>
+                                    </ion-text>
+                                </ion-button>
+                            </ion-col>
+                        </ion-row>
+                        <br>
+                    </ion-col>
+
+                    <ion-col size="12">
+                        <strong>Servicios</strong>
+                        <ion-row>
+                            <ion-col size="6">
+                                <ul>
+                                    <li>Bar</li>
+                                </ul>
+                            </ion-col>
+                            <ion-col size="6">
+                                <ul>
+                                    <li>Restaurante</li>
+                                </ul>
+                            </ion-col>
+                        </ion-row>
+                    </ion-col>
+
+                    <ion-col size="12">
+                        <strong>Horario de atención</strong>
+                        <ion-row>
+                            <ion-col size="6">
+                                <ul>
+                                    <li>Lun - Viernes</li>
+                                </ul>
+                            </ion-col>
+                            <ion-col size="6">
+                                <ul class="sin-marker-li">
+                                    <li>7am - 10pm</li>
+                                </ul>
+                            </ion-col>
+                            <ion-col size="6">
+                                <ul>
+                                    <li>Sab, Dom y Festivos</li>
+                                </ul>
+                            </ion-col>
+                            <ion-col size="6">
+                                <ul class="sin-marker-li">
+                                    <li>7am - 10pm</li>
+                                </ul>
+                            </ion-col>
+                        </ion-row>
+                    </ion-col>
+
+                    <ion-col *ngIf="detalleServicio.promociones.length !== 0" size="12">
+                        <br>
+                        <strong>Promociones</strong>
+                        <ion-row>
+                            <ion-col size="12">
+                                <app-promociones [lPromociones]="detalleServicio.promociones"></app-promociones>
+                            </ion-col>
+                        </ion-row>
+                    </ion-col>
+
+                    <ion-col *ngIf="detalleServicio.carta" size="12">
+                        <br>
+                        <strong>Carta</strong>
+                        <ion-row>
+                            <ion-col size="12">
+                                <app-carta [carta]="detalleServicio.carta"></app-carta>
+                            </ion-col>
+                        </ion-row>
+                    </ion-col>
+
+                    <ion-col *ngIf="detalleServicio.lugaresCercanos" size="12">
+                        <br>
+                        <strong>Lugares cercanos</strong>
+                        <ion-row>
+                            <ion-col size="12">
+                                <app-lugares-cercanos [lugares]="detalleServicio.lugaresCercanos"></app-lugares-cercanos>
+                            </ion-col>
+                        </ion-row>
+                    </ion-col>
+
+                    <ion-col size="12">
+                        <br>
+                        <strong>Opiniones</strong>
+                        <ion-row *ngIf="detalleServicio.opiniones.length === 0">
+                            <ion-col size="12">
+                                Aun no hay opinion sobre este lugar.
+                            </ion-col>
+                        </ion-row>
+
+                        <ion-row *ngIf="detalleServicio.opiniones.length !== 0">
+                            <ion-col *ngFor="let opinion of detalleServicio.opiniones" class="background-gris opinion" size="12">
+                                <ion-card-title mode="md" class="nombre">{{opinion.nombre}}</ion-card-title>
+                                <ion-card-subtitle mode="md" class="descripcion">{{opinion.opinion}}</ion-card-subtitle>
+                            </ion-col>
+                        </ion-row>
+                    </ion-col>
+                </ion-row>
+            </ion-card-content>
+        </ion-col>
+        <ion-col size="12" class="background-gris">
+            <ion-card-content>
+                <p>Comentarios</p>
+                <ion-row>
+                    <ion-col size="10">
+                        <ion-item class="input-style" lines="none" mode="ios">
+                            <ion-input class="input" type="text"></ion-input>
+                        </ion-item>
+                    </ion-col>
+                    <ion-col size="2">
+                        <ion-button class="button-style" size="large" expand="block" mode="ios" (click)="sendMessage()">
+                            <ion-icon name="send-outline"></ion-icon>
+                        </ion-button>
+                    </ion-col>
+                </ion-row>
+            </ion-card-content>
+
+        </ion-col>
+    </ion-row>
+</ion-content>

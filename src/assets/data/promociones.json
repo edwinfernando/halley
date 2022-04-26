@@ -1,0 +1,49 @@
+[{
+        "id": "",
+        "placeId": "",
+        "namePlace": "",
+        "categoria": "",
+        "nombre": "Paraiso del Bambu",
+        "imagen": [
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2mRQ4C3FbwZN4VSgfRCRubrY-rsTv8F4gIg&usqp=CAU",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2mRQ4C3FbwZN4VSgfRCRubrY-rsTv8F4gIg&usqp=CAU",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2mRQ4C3FbwZN4VSgfRCRubrY-rsTv8F4gIg&usqp=CAU"
+        ],
+        "precio": 20000,
+        "descripcion": "Lunes y martes de dos por uno, pague uno lleve dos",
+        "clicks": 0,
+        "isRifa": false
+    },
+    {
+        "id": "",
+        "placeId": "",
+        "namePlace": "",
+        "categoria": "",
+        "nombre": "Paraiso del Bambu",
+        "imagen": [
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2mRQ4C3FbwZN4VSgfRCRubrY-rsTv8F4gIg&usqp=CAU",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2mRQ4C3FbwZN4VSgfRCRubrY-rsTv8F4gIg&usqp=CAU",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2mRQ4C3FbwZN4VSgfRCRubrY-rsTv8F4gIg&usqp=CAU"
+        ],
+        "precio": 20000,
+        "descripcion": "Lunes y martes de dos por uno, pague uno lleve dos",
+        "clicks": 0,
+        "isRifa": true
+    },
+    {
+        "id": "",
+        "placeId": "",
+        "namePlace": "",
+        "categoria": "",
+        "nombre": "Paraiso del Bambu",
+        "imagen": [
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2mRQ4C3FbwZN4VSgfRCRubrY-rsTv8F4gIg&usqp=CAU",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2mRQ4C3FbwZN4VSgfRCRubrY-rsTv8F4gIg&usqp=CAU",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2mRQ4C3FbwZN4VSgfRCRubrY-rsTv8F4gIg&usqp=CAU"
+        ],
+        "precio": 20000,
+        "descripcion": "Lunes y martes de dos por uno, pague uno lleve dos",
+        "clicks": 0,
+        "isRifa": false
+    }
+]

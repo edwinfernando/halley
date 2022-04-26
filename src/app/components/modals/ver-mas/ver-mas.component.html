@@ -1,0 +1,19 @@
+<ion-content class="no-scroll padding">
+    <ion-buttons class="boton-close">
+        <ion-button (click)="closeModal()">
+            <ion-icon name="close-circle-outline"></ion-icon>
+        </ion-button>
+    </ion-buttons>
+    <img class="img-servicio-modal" [src]="image | imageSanitizer" alt="">
+    <ion-card-header>
+        <ion-card-title mode="md">{{titulo}}</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content *ngIf="titulo !== 'Ubicación'" class="ion-text-justify">
+        <ion-label>{{contenido}}</ion-label>
+    </ion-card-content>
+
+    <ion-card-content *ngIf="titulo === 'Ubicación'" class="ion-text-left">
+        <ion-label *ngFor="let item of contenido">{{item}}<br></ion-label>
+    </ion-card-content>
+</ion-content>

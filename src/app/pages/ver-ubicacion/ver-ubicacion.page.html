@@ -1,0 +1,35 @@
+<ion-header mode="ios" class="ion-no-border header-map">
+    <ion-toolbar class="ion-no-border" mode="ios" color="primary">
+        <ion-buttons slot="start">
+            <ion-button (click)="gotoBack()" mode="md">
+                <ion-icon slot="start" name="chevron-back-outline"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+
+        <ion-item lines="none" class="text-toolbar item-style transparente" mode="md">
+            <ion-label>{{ubicacion || ''}}</ion-label>
+        </ion-item>
+    </ion-toolbar>
+    <ion-searchbar class="toolbar-buscar" search-icon="location-outline" placeholder="Buscar municipio, lugar" animated [debounce]="700" [(ngModel)]="autocomplete.input" (ionChange)="updateSearchResults()" (ionClear)="clearAutocomplete()" (ionChange)="buscar($event)"
+        mode="ios"></ion-searchbar>
+
+</ion-header>
+
+<ion-content fullscreen>
+    <ion-grid *ngIf="buscando">
+        <ion-row>
+            <ion-col class="ion-text-center">
+                <ion-spinner name="crescent"></ion-spinner>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+    <ion-grid class="grid-servicios">
+        <ion-row>
+            <ion-col *ngFor="let servicio of servicios" size="12" size-sm="12" size-md="6">
+                <app-item-servicio [servicio]="servicio"></app-item-servicio>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+    <div #map id="map" style="height: 100%;"></div>
+</ion-content>
+<app-boton-voytu></app-boton-voytu>

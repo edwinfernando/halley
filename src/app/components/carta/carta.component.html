@@ -1,0 +1,12 @@
+<ion-row *ngFor="let carta of carta">
+    <ion-col size="4">
+        <ion-card class="card-item image-card" mode="md" [style.background-image]="carta.imagen | domSanitizer" button>
+            <ion-ripple-effect></ion-ripple-effect>
+        </ion-card>
+    </ion-col>
+    <ion-col size="8">
+        <ion-card-title mode="md" class="nombre">{{carta.name}}</ion-card-title>
+        <ion-card-subtitle mode="md" class="descripcion">{{carta.description}}</ion-card-subtitle>
+        <ion-card-subtitle mode="md" class="precio">{{formatearValor(carta.price)}}</ion-card-subtitle>
+    </ion-col>
+</ion-row>

@@ -1,0 +1,52 @@
+.card-item {
+    font-family: "Futura";
+    width: 100%;
+    margin: 0px;
+    // background: rgba(250, 204, 204, 0.1);
+    ion-card-header {
+        position: absolute;
+        bottom: 0;
+        padding-top: 5px;
+        padding-bottom: 7px;
+        width: 100%;
+    }
+    ion-card-title {
+        font-size: 1.3em;
+        color: #FFFFFF;
+    }
+    ion-card-subtitle {
+        font-size: 1.1em;
+        color: #FFFFFF;
+        margin-top: 0px;
+    }
+}
+/*
+.image-card {
+    height: 110px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+}**/
+
+.image-card {
+    margin: 0px;
+    height: 85px;
+    background-size: cover;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+    background-position: center;
+}
+
+.nombre {
+    font-size: 14px;
+}
+
+.descripcion {
+    font-size: 12px;
+}
+
+.precio {
+    font-size: 12px;
+    font-weight: bold;
+    color: #000000;
+}

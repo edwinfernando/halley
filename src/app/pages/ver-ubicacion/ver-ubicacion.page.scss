@@ -1,0 +1,34 @@
+.mapa {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    ion-col {
+        padding: 0px;
+    }
+}
+
+#map_canvas {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.header-map {
+    position: absolute;
+    top: 0;
+}
+
+.toolbar-buscar {
+    margin-top: 15px !important;
+    padding-bottom: 0px;
+    height: 52px;
+}
+
+.text-toolbar {
+    --min-height: 20px;
+    ion-label {
+        //font-size: smaller;
+        color: #ffffff;
+    }
+}

@@ -1,0 +1,25 @@
+.segment {
+    background-color: #FFFFFF;
+    ion-label {
+        font-family: "Futura";
+        line-height: 1.2;
+        text-transform: capitalize;
+        text-align: left;
+    }
+}
+
+.segment-button {
+    height: fit-content;
+}
+
+ion-content ion-segment {
+    margin: 5px 0;
+}
+
+.row-todos {
+    margin: 5px;
+}
+
+.titulo-categoria {
+    font-size: 16px;
+}

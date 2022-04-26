@@ -1,0 +1,22 @@
+<ion-content class="no-scroll padding">
+    <ion-buttons class="boton-close">
+        <ion-button (click)="closeModal()">
+            <ion-icon name="close-circle-outline"></ion-icon>
+        </ion-button>
+    </ion-buttons>
+    <ion-card-header>
+        <ion-card-title mode="md">Contactar</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+        <ion-row>
+            <ion-col *ngFor="let contact of contactar" class="sin-padding" size="12">
+                <ion-button [color]="contact.color" (click)="onClickContactar(contact)" expand="block" fill="outline" shape="round">
+                    <ion-icon slot="start" class="icon-redondos" [name]="contact.logo"></ion-icon>
+                    <p>
+                        {{contact.nombre}}
+                    </p>
+                </ion-button>
+            </ion-col>
+        </ion-row>
+    </ion-card-content>
+</ion-content>

@@ -1,0 +1,199 @@
+<app-header-tabs [isBotones]="true" (cambiarMunicipio)="cambiarMunicipio()"></app-header-tabs>
+
+<ion-content class="margin-container" fullscreen [scrollEvents]="true" (ionScrollStart)="onScrollStart(true)" (ionScrollEnd)="onScrollEnd(false)">
+    <ion-fab vertical="top" horizontal="end" slot="fixed">
+        <ion-fab-button size="small" class="fab-button" (click)="onClickSOS($event)">
+            S.O.S
+        </ion-fab-button>
+    </ion-fab>
+    <app-slide-imagenes *ngIf="municipio.imagenes !== []" [imagenes]="municipio.imagenes"></app-slide-imagenes>
+    <ion-row *ngIf="municipio.nombre !== ''" class="margin-container">
+        <ion-col class="background-gris" size="12">
+            <ion-card-header>
+                <ion-card-title mode="md">{{municipio.nombre}}</ion-card-title>
+                <ion-card-subtitle mode="md">
+                    {{municipio.departamento}}
+                </ion-card-subtitle>
+            </ion-card-header>
+
+            <ion-card-content class="ion-text-justify">
+                <ion-label class="ion-text-wrap">{{recortarCadena(municipio.descripcion)}}</ion-label>
+                <a (click)="onClickModalVerMas(municipio.nombre, $event, municipio.descripcion)">(ver más)</a>
+            </ion-card-content>
+        </ion-col>
+        <ion-col size="12">
+            <ion-card-content>
+                <ion-row>
+                    <ion-col size="12">
+                        <ion-row>
+                            <ion-col *ngIf="municipio.cargo !== ''" size="4">
+                                <strong>{{municipio.cargo}}</strong>
+                            </ion-col>
+                            <ion-col *ngIf="municipio.alcalde !== ''" size="8">
+                                <p>{{municipio.alcalde}}</p>
+                                <p>{{municipio.periodo}}</p>
+                            </ion-col>
+                        </ion-row>
+                    </ion-col>
+                    <ion-col size="12">
+                        <strong>Eventos Historicos</strong>
+                        <ion-row>
+                            <ion-col size="4">
+                                <ul>
+                                    <li>Fundación</li>
+                                </ul>
+                            </ion-col>
+                            <ion-col size="8">
+                                <ul class="sin-marker-li">
+                                    <li>{{municipio.fundacion}}</li>
+                                </ul>
+                            </ion-col>
+                            <ion-col size="4">
+                                <ul>
+                                    <li>Erección</li>
+                                </ul>
+                            </ion-col>
+                            <ion-col size="8">
+                                <ul class="sin-marker-li">
+                                    <li>{{municipio.ereccion}}</li>
+                                </ul>
+                            </ion-col>
+                        </ion-row>
+                    </ion-col>
+                    <ion-col size="12">
+                        <strong>Superficie</strong>
+                        <ion-row>
+                            <ion-col size="4">
+                                <ul>
+                                    <li>Total</li>
+                                </ul>
+                            </ion-col>
+                            <ion-col size="8">
+                                <ul class="sin-marker-li">
+                                    <li>{{municipio.superficie}}<sup>2</sup></li>
+                                </ul>
+                            </ion-col>
+                        </ion-row>
+                    </ion-col>
+                    <ion-col size="12">
+                        <strong>Altitud</strong>
+                        <ion-row>
+                            <ion-col size="4">
+                                <ul>
+                                    <li>Media</li>
+                                </ul>
+                            </ion-col>
+                            <ion-col size="8">
+                                <ul class="sin-marker-li">
+                                    <li>{{municipio.altitud}}</li>
+                                </ul>
+                            </ion-col>
+                        </ion-row>
+                    </ion-col>
+                    <ion-col size="12">
+                        <strong>Población</strong>
+                        <ion-row>
+                            <ion-col size="4">
+                                <ul>
+                                    <li>Total</li>
+                                </ul>
+                            </ion-col>
+                            <ion-col size="8">
+                                <ul class="sin-marker-li">
+                                    <li>{{municipio.poblacion}}</li>
+                                </ul>
+                            </ion-col>
+                            <ion-col size="4">
+                                <ul>
+                                    <li>Densidad</li>
+                                </ul>
+                            </ion-col>
+                            <ion-col size="8">
+                                <ul class="sin-marker-li">
+                                    <li>{{municipio.densidad}}<sup>2</sup></li>
+                                </ul>
+                            </ion-col>
+                            <ion-col size="4">
+                                <ul>
+                                    <li>Urbano</li>
+                                </ul>
+                            </ion-col>
+                            <ion-col size="8">
+                                <ul class="sin-marker-li">
+                                    <li>{{municipio.urbano}}</li>
+                                </ul>
+                            </ion-col>
+                        </ion-row>
+                    </ion-col>
+                    <ion-col size="12">
+                        <ion-row>
+                            <ion-col size="4">
+                                <strong>Gentilicio</strong>
+                            </ion-col>
+                            <ion-col size="8">
+                                <ul class="sin-marker-li">
+                                    <li>{{municipio.gentilicio}}</li>
+                                </ul>
+                            </ion-col>
+                        </ion-row>
+                    </ion-col>
+                    <ion-col *ngIf="municipio.historia !== ''" size="12">
+                        <strong>Historia</strong>
+                        <ion-row>
+                            <ion-col class="ion-text-justify" size="12">
+                                <ion-label class="ion-text-wrap">{{recortarCadena(municipio.historia)}}</ion-label>
+
+                                <a (click)="onClickModalVerMas('Historia', $event, municipio.historia)">(ver más)</a>
+                            </ion-col>
+                        </ion-row>
+                    </ion-col>
+                    <ion-col *ngIf="municipio.economia !== ''" size="12">
+                        <strong>Economía</strong>
+                        <ion-row>
+                            <ion-col class="ion-text-justify" size="12">
+                                <ion-label class="ion-text-wrap">{{recortarCadena(municipio.economia)}}</ion-label>
+                                <a (click)="onClickModalVerMas('Economía', $event, municipio.economia)">(ver más)</a>
+                            </ion-col>
+                        </ion-row>
+                    </ion-col>
+                    <ion-col *ngIf="municipio.cultura !== ''" size="12">
+                        <strong>Cultura</strong>
+                        <ion-row>
+                            <ion-col class="ion-text-justify" size="12">
+                                <ion-label class="ion-text-wrap">{{recortarCadena(municipio.cultura)}}</ion-label>
+                                <a (click)="onClickModalVerMas('Cultura', $event, municipio.cultura)">(ver más)</a>
+                            </ion-col>
+                        </ion-row>
+                    </ion-col>
+                    <ion-col size="12">
+                        <strong>Simbolos patrios</strong>
+                        <ion-row>
+                            <ion-col size="12" class="ion-text-center">
+                                <app-imagen-simbolos *ngFor="let imagen of municipio.imagenSimbolos" [imagenSimbolo]="imagen"></app-imagen-simbolos>
+                            </ion-col>
+                        </ion-row>
+                    </ion-col>
+                    <ion-col *ngIf="municipio.himno !== ''" size="12">
+                        <strong>Himno</strong>
+                        <ion-row>
+                            <ion-col size="12">
+                                <audio class="audio-himno" controls>
+                                    <source [src]="municipio.himno" type="audio/mpeg">
+                                  </audio>
+                            </ion-col>
+                        </ion-row>
+                    </ion-col>
+                    <ion-col *ngIf="municipio.url !== ''" size="12">
+                        <strong>Url</strong>
+                        <ion-row>
+                            <ion-col size="12">
+                                <a>{{municipio.url}}</a>
+                            </ion-col>
+                        </ion-row>
+                    </ion-col>
+                </ion-row>
+            </ion-card-content>
+        </ion-col>
+    </ion-row>
+</ion-content>
+<!--<app-boton-voytu *ngIf="!isScrolleable"></app-boton-voytu>-->

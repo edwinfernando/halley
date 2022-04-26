@@ -1,0 +1,151 @@
+[{
+        "codigo": "191030",
+        "nombre": "Santander de Quilichao",
+        "departamento": "Cauca",
+        "cargo": "Alcaldesa",
+        "alcalde": "Lucy Amparo Guzmán Gonzales",
+        "periodo": "(2020 - 2023)",
+        "fundacion": "16 de julio de 1543",
+        "ereccion": "16 de julio de 1755",
+        "superficie": "518 km",
+        "altitud": "1.071 m s. n. m.",
+        "poblacion": "95,041 hab",
+        "densidad": "212,16 hab/km",
+        "urbano": "54,362 hab",
+        "gentilicio": "Quilichagueño, -a",
+        "descripcion": "Es una ciudad Colombiana ubicada en el sector norte del departamento del Cauca, a 97 km al norte de Popayán y a 45 km al sur de Cali. Límites: al norte con los Municipios de Villa Rica y Jamundí, al Occidente con el municipio de Buenos Aires, al oriente con los municipios de Caloto y Jambaló y al sur con el Municipio de Caldono",
+        "historia": "El acuerdo 005 del 1 de junio de 2006 institucionaliza el nacimiento civil de Santander de Quilichao el 16 de julio de 1755. Sin fundador específico probado se supone que en 1543 Sebastián de Belalcázar fundó \"Jamaica de los Quilichao\". Existen posiciones divergentes sobre si Quilichao tuvo o no una fundación según las normas del siglo XVI. Los asentamientos humanos en la región en el siglo XVII cambiaban según la explotaciones mineras. Varias hipótesis tratan de explicar el significado de la palabra “QUILICHAO”. Una sostiene que este procede del pijao y significa “Tierra de Oro”, de ao, \"oro\" y quilich, \"tierra\". Se pretende demostrar esta aseveración retomando otra palabra de procedencia indígena, CHICAO, \"Pájaro de Oro\"; de ao, \"oro\" y chic, \"pájaro\". Otra hipótesis sostiene que QUILICHAO proviene de la lengua nasa yuwe (paez) producto de las raíces tyicli, \"tigre\" y ciao, \"sueño\", significando \"sueño de tigre\". Como producto de la transformación idiomática de estas dos raíces surgió del vocablo “QUILICHAO”. El apelativo de “Sueño de Tigre” lo usaban los indígenas nasas (paeces) para referirse a este sitio, donde según la tradición oral, se celebraba un ritual en el cual los the wala (médicos tradicionales) soñaban con este felino. Otra hipótesis (ANGOLA 2006) propone una evolución del vocablo indígena kilishara, que significa \"casa de paso\".",
+        "economia": "Básicamente la economía del municipio de Santander proviene en buena parte del sector primario de vocación agropecuaria donde el café, la caña de azúcar y la yuca entre otros son renglones de gran importancia que generan ingresos a los agricultores. Con los beneficios que trajo la Ley Páez y la instalación de empresas manufactureras, el renglón secundario paso a ocupar un buen lugar en la economía local y regional, sin desconocer que el sector terciario, el comercio en el casco urbano es fuente generadora de empleo y actividad económica dinámica. Tiene Santander de Quilichao unas características importantes para el desarrollo activo de los tres sectores de la economía en comparación con otros municipios del Departamento y que podemos mencionar: Su ubicación geográfica es favorable al sector cerca al gran centro de producción y consumo como es Cali, al Puerto de Buenaventura, a los puertos secos de Yumbo y Buga y otras ciudades del Departamento.",
+        "cultura": "La fuga es un ritmo del Pacífico, herencia de los esclavos liberados y fugitivos que se refugiaron el los asentamientos de Santander de Quilichao, lo que es notable ya que este municipio se encuentra en la región andina al norte del departamento del Cauca. Son celebradas en las veredas de San Antonio, Lomitas, el Palmar, Ardobela y Quinamayo. Estas empiezan al mediodía y llegan hasta la mañana del día siguiente. En esta festividad se toca música folclórica del norte del cauca y el sur del valle (jamundí). Por lo general las letras de las fugas son cantandas por las mujeres que son líderes culturales de Las Veredas, aunque en ocasiones están acompañadas de hombres. La fuga se baila haciendo una fila y quien la dirige realiza los pasos, y las personas que lo siguen en la fila tiene que repetirlo. Si el dirigente da una vuelta en su propio eje los demás deben darla en el mismo lugar que él la dio.",
+        "himno": "assets/himno/himno_s_q.mp3",
+        "url": "http://santanderdequilichao-cauca.gov.co",
+        "colorPredominante": "#ff0000",
+        "ubicacion": {
+            "codigo": "191030",
+            "placeId": "ChIJXd9wwM9_MI4RmC_X-VNhoH0",
+            "location": {
+                "lat": 3.002516,
+                "lng": -76.483799
+            },
+            "direccion": "Carrera 13",
+            "municipio": "Santander de Quilichao",
+            "departamento": "Cauca",
+            "isChecked": true
+        },
+        "imagenes": [{
+                "tipo": "imagen",
+                "url": "https://www.las2orillas.co/wp-content/uploads/2018/02/IglQuilich-780x514.png"
+            },
+            {
+                "tipo": "imagen",
+                "url": "https://partidomira.com/wp-content/uploads/2018/11/46866222_802277496785083_7726015561225732096_n.jpg"
+            },
+            {
+                "tipo": "imagen",
+                "url": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Saman_de_Santander_de_Quilichao.jpg"
+            },
+            {
+                "tipo": "video",
+                "url": "https://www.youtube.com/watch?v=0rrCFR6ERTs"
+            }
+        ],
+        "imagenSimbolos": [{
+                "tipo": "Bandera",
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Flag_of_Santander_de_Quilichao_%28Cauca%29.svg/1280px-Flag_of_Santander_de_Quilichao_%28Cauca%29.svg.png"
+            },
+            {
+                "tipo": "Escudo",
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Escudo_de_Santander_de_Quilichao.svg/853px-Escudo_de_Santander_de_Quilichao.svg.png"
+            }
+        ],
+        "numerosEmergencia": [{
+                "nombre": "Policia",
+                "numero": "0328293535",
+                "color": "primary"
+            },
+            {
+                "nombre": "Bomberos",
+                "numero": "0328293535",
+                "color": "danger"
+            },
+            {
+                "nombre": "Hospital",
+                "numero": "0328293535",
+                "color": "secondary"
+            }
+        ]
+    },
+    {
+        "codigo": "191031",
+        "nombre": "Caloto",
+        "departamento": "Cauca",
+        "cargo": "",
+        "alcalde": "",
+        "periodo": "",
+        "fundacion": "29 de junio de 1543",
+        "ereccion": "13 de octubre de 1810",
+        "superficie": "397.21 km",
+        "altitud": "1.050 m s. n. m.",
+        "poblacion": "17,642 hab",
+        "densidad": "",
+        "urbano": "4,583 hab",
+        "gentilicio": "Caloteño, -a",
+        "descripcion": "La población de Caloto fue fundada en 1543 por el capitán Juan Moreno orden de Sebastián de Belalcázar, Caloto fue trasladada en 1582 por los continuos ataques de indígenas paeces y pijaos. En 1585 cambio de nombre por Nueva Segovia; el nombre completo es Nueva Segovia de San Esteban de Caloto. Dentro de esta división geográfica también se encuentra el resguardo indígena de López Adentro, perteneciente al Pueblo Nasa.",
+        "historia": "",
+        "economia": "",
+        "cultura": "",
+        "himno": "",
+        "url": "",
+        "colorPredominante": "",
+        "ubicacion": {
+            "codigo": "191031",
+            "placeId": "ChIJXd9wwM9_MI4RmC_X-VNhoH0",
+            "location": {
+                "lat": 3.033296,
+                "lng": -76.411895
+            },
+            "direccion": "Carrera 13",
+            "municipio": "Caloto",
+            "departamento": "Cauca",
+            "isChecked": true
+        },
+        "imagenes": [{
+                "tipo": "imagen",
+                "url": "https://www.radiosuperpopayan.com/wp-content/uploads/2017/10/caloto.jpg"
+            },
+            {
+                "tipo": "imagen",
+                "url": "https://radio1040am.com/wp-content/uploads/2020/04/caloto-plaza-640x334.jpg"
+            },
+            {
+                "tipo": "imagen",
+                "url": "https://2.bp.blogspot.com/-HGceZEE_8eo/Uvk2rYEwRoI/AAAAAAAAAAw/VZhZn4hCl1Y/s1600/01-+Enero.jpg"
+            }
+        ],
+        "imagenSimbolos": [{
+                "tipo": "Bandera",
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Flag_of_Caloto.svg/1280px-Flag_of_Caloto.svg.png"
+            },
+            {
+                "tipo": "Escudo",
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Escudo_de_Caloto.svg/1200px-Escudo_de_Caloto.svg.png"
+            }
+        ],
+        "numerosEmergencia": [{
+                "nombre": "Policia",
+                "numero": "0328293535",
+                "color": "primary"
+            },
+            {
+                "nombre": "Bomberos",
+                "numero": "0328293535",
+                "color": "danger"
+            },
+            {
+                "nombre": "Hospital",
+                "numero": "0328293535",
+                "color": "secondary"
+            }
+        ]
+    }
+]

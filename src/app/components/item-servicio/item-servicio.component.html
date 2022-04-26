@@ -1,0 +1,22 @@
+<ion-card *ngIf="isFocused" class="card-item image-card" mode="md" [style.background-image]="servicio.imagenes[0].url | domSanitizer" button (click)="onClick()">
+    <ion-ripple-effect></ion-ripple-effect>
+    <ion-card-header>
+        <ion-card-title mode="md">{{servicio.nombre}}</ion-card-title>
+        <ion-card-subtitle *ngIf="servicio.min !== ''" mode="md">{{servicio.min}} - {{servicio.km}}</ion-card-subtitle>
+        <ion-card-subtitle *ngIf="servicio.min === ''" mode="md">Calculando...</ion-card-subtitle>
+    </ion-card-header>
+</ion-card>
+
+<ion-row *ngIf="!isFocused" ion-button>
+    <ion-col size="4">
+        <ion-card class="card-item image-card" mode="md" [style.background-image]="servicio.imagenes[0].url | domSanitizer" button (click)="onClick()">
+            <ion-ripple-effect></ion-ripple-effect>
+        </ion-card>
+    </ion-col>
+    <ion-col size="8">
+        <ion-card-title mode="md" class="nombre">{{servicio.nombre}}</ion-card-title>
+        <ion-card-subtitle mode="md" class="descripcion">{{recortarCadena(servicio.descripcion)}}</ion-card-subtitle>
+        <ion-card-subtitle *ngIf="servicio.min !== ''" mode="md" class="precio">{{servicio.min}} - {{servicio.km}}</ion-card-subtitle>
+        <ion-card-subtitle *ngIf="servicio.min === ''" mode="md" class="precio">Calculando...</ion-card-subtitle>
+    </ion-col>
+</ion-row>

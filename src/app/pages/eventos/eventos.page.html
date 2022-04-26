@@ -1,0 +1,31 @@
+<app-header-tabs [isTab]="true" [titulo]="municipio.nombre" [isBotones]="false" [municipioSeleccionado]="municipio.ubicacion" (cambiarMunicipio)="cambiarMunicipio()"></app-header-tabs>
+
+<ion-toolbar class="tab-margin-sin-toolbar " mode="md">
+    <ion-segment scrollable class="segment" color="primary" mode="md" (ionChange)="segmentChanged($event)" value="Todos">
+        <ion-segment-button class="segment-button" *ngFor="let categoria of categorias" value="{{categoria.name}}">
+            <!--<ion-icon name="{{categoria.icon}}"></ion-icon>-->
+            <ion-label>{{categoria.name}}</ion-label>
+        </ion-segment-button>
+    </ion-segment>
+</ion-toolbar>
+
+<ion-content fullscreen class="background-gris">
+    <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+        <ion-refresher-content></ion-refresher-content>
+    </ion-refresher>
+
+    <ion-grid class="grid-servicios">
+        <ion-row class="row-todos" *ngFor="let todos of todosServicios">
+            <ion-card-title class="titulo-categoria" *ngIf="segmento === 'Todos'">{{todos.nombreCategoria}}</ion-card-title>
+            <ion-col *ngFor="let servicio of todos.servicios" size="12" size-sm="12" size-md="6">
+                <app-item-servicio [servicio]="servicio"></app-item-servicio>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+
+    <ion-infinite-scroll threshold="100px" (ionInfinite)="loadData($event)">
+        <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="Loading more data...">
+        </ion-infinite-scroll-content>
+    </ion-infinite-scroll>
+
+</ion-content>

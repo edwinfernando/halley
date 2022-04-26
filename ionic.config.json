@@ -1,5 +1,11 @@
 {
-  "name": "voytu",
-  "integrations": {},
-  "type": "angular"
+    "name": "voytu",
+    "integrations": {
+        "cordova": {}
+    },
+    "type": "angular",
+    "proxies": [{
+        "path": "/api",
+        "proxyUrl": "https://maps.googleapis.com"
+    }]
 }

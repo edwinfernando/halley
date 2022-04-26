@@ -1,0 +1,9 @@
+<ion-slides [options]="slideOpts">
+    <ion-slide *ngFor="let promocion of lPromociones">
+        <ion-row class="row-promocion">
+            <ion-col size="12">
+                <app-item-promocion [promocion]="promocion"></app-item-promocion>
+            </ion-col>
+        </ion-row>
+    </ion-slide>
+</ion-slides>

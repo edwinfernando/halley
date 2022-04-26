@@ -1,0 +1,10 @@
+<div class="swiper-container">
+    <ion-slides #ionSlides mode="ios" pager="true" scrollbar="false" [options]="slideOpts">
+        <ion-slide *ngFor="let imagen of imagenes" class="tamano-slide">
+            <div *ngIf="imagen.tipo === 'imagen'" class="image" [style.background-image]="imagen.url | domSanitizer">
+            </div>
+            <i class="fa fa-question-circle" aria-hidden="true"></i> <iframe *ngIf="imagen.tipo === 'video'" title="" class="image" frameborder="0" [src]="getUrlVideo(imagen.url)" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+        </ion-slide>
+    </ion-slides>
+</div>
